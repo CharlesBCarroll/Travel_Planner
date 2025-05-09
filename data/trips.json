@@ -1,0 +1,30 @@
+{
+  "Example": {
+    "start_date": "2025-05-08",
+    "end_date": "2025-05-15",
+    "locations": [
+      "Chicago",
+      "Detroit"
+    ],
+    "preference": "time"
+  },
+  "dope": {
+    "start_date": "2025-05-08",
+    "end_date": "2025-05-15",
+    "locations": [
+      "Paris",
+      "Singapore"
+    ],
+    "preference": "cost"
+  },
+  "MyTrip": {
+    "start_date": "2025-05-15",
+    "end_date": "2025-05-22",
+    "locations": [
+      "Columbus",
+      "Detroit",
+      "Chicago"
+    ],
+    "preference": "cost"
+  }
+}

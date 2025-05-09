@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Add Locations – Travel Planner{% endblock %}
+
+{% block content %}
+  <h2>Add Locations for “{{ trip_name }}”</h2>
+  {% if error %}
+    <p class="error">{{ error }}</p>
+  {% endif %}
+
+  <form class="form" method="post" action="{{ url_for('add_locations', trip_name=trip_name) }}">
+    <div>
+      <label for="location">City Name:</label><br>
+      <input id="location" type="text" name="location" placeholder="e.g., Paris">
+    </div>
+    <button type="submit">➕ Add</button>
+    <!-- formnovalidate lets Finish bypass the empty‐field check -->
+    <button type="submit" name="finish" formnovalidate>✅ Finish Trip</button>
+  </form>
+
+  <h3>Current Locations</h3>
+  <ul class="trip-list">
+    {% for loc in locations %}
+      <li class="location-item">
+        <span>{{ loc }}</span>
+        <form method="post" action="{{ url_for('add_locations', trip_name=trip_name) }}" class="remove-form">
+          <button type="submit" name="remove" value="{{ loc }}" formnovalidate>❌</button>
+        </form>
+      </li>
+    {% else %}
+      <li><em>No locations added yet.</em></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

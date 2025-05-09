@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Home – Travel Planner{% endblock %}
+
+{% block content %}
+  <section>
+    <h2>My Trips</h2>
+    <ul class="trip-list">
+      {% for name, trip in trips.items() %}
+        {% set date_range = '' %}
+        {% if trip.start_date and trip.end_date %}
+          {% set date_range = trip.start_date ~ ' to ' ~ trip.end_date %}
+        {% endif %}
+        <li class="trip-item" style="display: flex; justify-content: space-between; align-items: center;">
+          <a href="{{ url_for('route_page', trip_name=name) }}" class="trip-info" style="text-decoration: none; color: #007BFF; font-weight: bold;">
+            {{ name }} 
+            {% if date_range %}
+              <span style="font-size: 0.9rem; color: #555;">({{ date_range }})</span>
+            {% endif %} 
+            {% if trip.locations %}
+              <span style="font-size: 0.9rem; color: #555;"> - {{ trip.locations | length }} locations</span>
+            {% endif %}
+          </a>
+          <div style="display: flex; gap: 0.5rem;">
+            <a href="{{ url_for('add_locations', trip_name=name) }}" class="button" style="background-color: #007BFF; color: white; text-decoration: none;" onmouseover="this.style.backgroundColor='#0056b3';" onmouseout="this.style.backgroundColor='#007BFF';">Add</a>
+            <form method="post" action="{{ url_for('handle_delete_trip', trip_name=name) }}" style="display: flex; gap: 0.5rem;">
+              <button type="submit" class="button" style="background-color: #dc3545; color: white; text-decoration: none;" onmouseover="this.style.backgroundColor='#c82333';" onmouseout="this.style.backgroundColor='#dc3545';">🗑️ Delete</button>
+            </form>
+          </div>
+        </li>
+      {% else %}
+        <li><em>No trips yet.</em></li>
+      {% endfor %}
+    </ul>
+
+    <div class="new-trip-container" style="text-align: center; margin-top: 2rem;">
+      <a href="{{ url_for('create_trip') }}" class="button" style="background-color: #007BFF; color: white; text-decoration: none;" onmouseover="this.style.backgroundColor='#0056b3';" onmouseout="this.style.backgroundColor='#007BFF';">➕ New Trip</a>
+    </div>
+  </section>
+{% endblock %}

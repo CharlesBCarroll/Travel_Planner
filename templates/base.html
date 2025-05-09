@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Travel Planner{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">
+          <a href="{{ url_for('home') }}" style= "font-size: 3rem; line-height:1; padding: 1rem 0;">🗺️ Travel Planner</a></h1>
+      </div>
+    </header>
+
+    <main class="container">
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer container">
+      <p>&copy; 2025 Chucks Travel Planner App</p>
+    </footer>
+    {% block scripts %}{% endblock %}
+  </body>
+</html>

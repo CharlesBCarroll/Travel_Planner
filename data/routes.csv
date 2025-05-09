@@ -1,0 +1,321 @@
+Denver,Oklahoma City,plane,0.9,81.14,flight
+Oklahoma City,Colorado Springs,plane,0.83,74.75,flight
+Bangalore,Chennai,plane,0.32,29.02,flight
+New York,Philadelphia,plane,0.14,12.96,flight
+Baltimore,Raleigh,plane,0.48,42.93,flight
+Virginia Beach,Raleigh,plane,0.3,26.65,flight
+New Orleans,Mexico City,plane,1.65,148.39,flight
+Portland,Sacramento,plane,0.86,77.6,flight
+Houston,San Antonio,plane,0.34,30.43,flight
+Austin,Mexico City,plane,1.35,121.28,flight
+Houston,Fort Worth,plane,0.42,38.16,flight
+Indianapolis,Nashville,plane,0.45,40.46,flight
+Shanghai,Wuhan,plane,0.76,68.74,flight
+Guangzhou,Dongguan,plane,0.06,5.13,flight
+Seattle,Oakland,plane,1.21,108.99,flight
+Washington,Raleigh,plane,0.42,37.55,flight
+Chennai,Hyderabad,plane,0.57,51.52,flight
+Chongqing,Xi’an,plane,0.64,57.85,flight
+Chicago,Minneapolis,plane,0.63,57.06,flight
+Houston,Austin,plane,0.26,23.54,flight
+Chennai,Surat,plane,1.33,119.68,flight
+Luanda,Riyadh,plane,5.78,519.77,flight
+Indianapolis,Louisville,plane,0.19,17.2,flight
+Shanghai,Nagoya,plane,1.67,149.97,flight
+San Jose,Oakland,plane,0.07,6.19,flight
+Cairo,Riyadh,plane,1.82,163.38,flight
+Baltimore,Virginia Beach,plane,0.31,27.67,flight
+Lahore,Ahmedabad,plane,1.07,96.12,flight
+Tehran,Baghdad,plane,0.77,69.54,flight
+Chicago,Columbus,plane,0.49,44.36,flight
+Austin,Oklahoma City,plane,0.64,57.86,flight
+Chongqing,Wuhan,plane,0.8,72.33,flight
+Chongqing,Foshan,plane,1.05,94.39,flight
+Kansas City,Tulsa,plane,0.39,35.04,flight
+Seattle,Portland,plane,0.26,23.51,flight
+Rio de Janeiro,Lima,plane,4.2,377.86,flight
+Seattle,Sacramento,plane,1.12,100.58,flight
+Philadelphia,Raleigh,plane,0.62,55.51,flight
+Cairo,London,plane,3.9,351.13,flight
+Seoul,Shenyang,plane,0.62,56.05,flight
+Shenzhen,Hong Kong,plane,0.03,2.74,flight
+San Antonio,Fort Worth,plane,0.43,38.66,flight
+Cairo,Madrid,plane,3.72,335.06,flight
+Dhaka,Chongqing,plane,1.95,175.31,flight
+Washington,Boston,plane,0.7,63.37,flight
+Delhi,Dhaka,plane,1.59,143.33,flight
+Istanbul,Moscow,plane,1.95,175.64,flight
+Washington,Virginia Beach,plane,0.27,24.66,flight
+Delhi,Ahmedabad,plane,0.86,77.74,flight
+Istanbul,Baghdad,plane,1.78,160.6,flight
+San Jose,Portland,plane,1.01,91.05,flight
+Louisville,Atlanta,plane,0.57,51.57,flight
+Hong Kong,Dongguan,plane,0.1,8.9,flight
+San Jose,Sacramento,plane,0.16,14.25,flight
+San Antonio,Austin,plane,0.13,11.84,flight
+Delhi,Mumbai,plane,1.28,115.32,flight
+Dhaka,Bangkok,plane,1.71,154.07,flight
+Istanbul,Tehran,plane,2.26,203.53,flight
+Tehran,Riyadh,plane,1.45,130.13,flight
+Ho Chi Minh City,Kuala Lumpur,plane,1.13,101.35,flight
+San Francisco,Oakland,plane,0.01,1.34,flight
+Bangkok,Foshan,plane,1.87,168.19,flight
+Chicago,Milwaukee,plane,0.15,13.11,flight
+Los Angeles,Sacramento,plane,0.65,58.17,flight
+Kansas City,Minneapolis,plane,0.74,66.25,flight
+Charlotte,Raleigh,plane,0.23,20.88,flight
+Philadelphia,Boston,plane,0.48,43.56,flight
+Philadelphia,Virginia Beach,plane,0.39,35.19,flight
+Tokyo,Shenyang,plane,1.74,156.21,flight
+Colorado Springs,Wichita,plane,0.74,66.62,flight
+Memphis,New Orleans,plane,0.64,57.8,flight
+Bangkok,Kuala Lumpur,plane,1.32,118.77,flight
+Mumbai,Ahmedabad,plane,0.49,44.0,flight
+Jakarta,Singapore,plane,1.01,90.54,flight
+Tokyo,Shanghai,plane,1.95,175.82,flight
+Seoul,Nagoya,plane,1.03,92.71,flight
+San Jose,Fresno,plane,0.22,19.79,flight
+Shenzhen,Wuhan,plane,0.99,89.54,flight
+Shenzhen,Foshan,plane,0.12,10.98,flight
+Dallas,Tulsa,plane,0.43,38.27,flight
+London,Madrid,plane,1.4,126.34,flight
+San Francisco,Portland,plane,0.96,85.98,flight
+Buenos Aires,Lima,plane,3.49,313.74,flight
+San Francisco,Sacramento,plane,0.13,12.08,flight
+Jakarta,Bangkok,plane,2.59,232.78,flight
+Los Angeles,Fresno,plane,0.37,32.98,flight
+Charlotte,Virginia Beach,plane,0.53,47.32,flight
+Osaka,Seoul,plane,0.92,82.91,flight
+Manila,Dongguan,plane,1.34,120.62,flight
+Manila,Singapore,plane,2.66,239.27,flight
+Philadelphia,Washington,plane,0.22,19.84,flight
+Karachi,Surat,plane,0.8,72.4,flight
+Las Vegas,Long Beach,plane,0.43,38.55,flight
+El Paso,Tucson,plane,0.47,42.65,flight
+Hangzhou,Shenyang,plane,1.46,131.54,flight
+Wuhan,Hong Kong,plane,1.02,92.01,flight
+Lagos,Luanda,plane,2.26,203.1,flight
+Memphis,Atlanta,plane,0.6,54.18,flight
+São Paulo,Lima,plane,3.84,345.44,flight
+Ho Chi Minh City,Singapore,plane,1.22,109.79,flight
+Columbus,Washington,plane,0.58,52.51,flight
+Columbus,Milwaukee,plane,0.59,53.29,flight
+Manila,Guangzhou,plane,1.39,124.8,flight
+Cairo,Lagos,plane,4.35,391.28,flight
+Bogotá,Lima,plane,2.1,189.21,flight
+Milwaukee,Minneapolis,plane,0.53,47.96,flight
+Omaha,Wichita,plane,0.46,41.46,flight
+Jacksonville,Raleigh,plane,0.74,66.77,flight
+Detroit,Louisville,plane,0.56,50.85,flight
+Lagos,Madrid,plane,4.26,383.41,flight
+Memphis,Nashville,plane,0.35,31.6,flight
+São Paulo,Buenos Aires,plane,1.86,167.49,flight
+Albuquerque,Mesa,plane,0.57,51.1,flight
+San Francisco,Fresno,plane,0.29,25.99,flight
+Charlotte,Washington,plane,0.59,53.04,flight
+Mumbai,Bangalore,plane,0.94,84.53,flight
+Denver,Colorado Springs,plane,0.11,10.17,flight
+Dongguan,Hangzhou,plane,1.14,102.69,flight
+El Paso,Albuquerque,plane,0.41,36.98,flight
+Wuhan,Xi’an,plane,0.73,65.34,flight
+Albuquerque,Tucson,plane,0.57,51.12,flight
+Memphis,Louisville,plane,0.57,51.5,flight
+Los Angeles,San Jose,plane,0.55,49.16,flight
+Oklahoma City,Wichita,plane,0.27,24.74,flight
+Hyderabad,Ahmedabad,plane,0.98,87.95,flight
+Kuala Lumpur,Singapore,plane,0.34,30.93,flight
+Beijing,Shenyang,plane,0.7,62.72,flight
+Moscow,Baghdad,plane,2.83,254.91,flight
+Dallas,Oklahoma City,plane,0.34,30.65,flight
+New York,Boston,plane,0.34,30.61,flight
+New Orleans,Bogotá,plane,3.63,327.09,flight
+New York,Virginia Beach,plane,0.51,46.19,flight
+Wuhan,Foshan,plane,0.94,85.0,flight
+Phoenix,El Paso,plane,0.62,55.6,flight
+Shanghai,Hangzhou,plane,0.18,16.49,flight
+Guangzhou,Hong Kong,plane,0.14,12.93,flight
+Oklahoma City,Omaha,plane,0.73,65.83,flight
+Moscow,Tehran,plane,2.74,246.37,flight
+Beijing,Xi’an,plane,1.01,90.54,flight
+Denver,Wichita,plane,0.78,70.24,flight
+Karachi,Ahmedabad,plane,0.67,60.18,flight
+Bangalore,Ahmedabad,plane,1.37,123.7,flight
+Karachi,Baghdad,plane,2.65,238.52,flight
+Austin,New Orleans,plane,0.82,73.86,flight
+Boston,Virginia Beach,plane,0.83,74.31,flight
+Shanghai,Seoul,plane,0.96,86.65,flight
+Indianapolis,Minneapolis,plane,0.91,82.18,flight
+Ahmedabad,Surat,plane,0.23,20.77,flight
+Houston,Mexico City,plane,1.34,120.95,flight
+Oklahoma City,Tulsa,plane,0.17,15.72,flight
+Beijing,Wuhan,plane,1.17,105.27,flight
+Denver,Omaha,plane,0.87,78.37,flight
+Karachi,Tehran,plane,2.13,191.84,flight
+New York,Washington,plane,0.36,32.76,flight
+Fresno,Long Beach,plane,0.4,36.03,flight
+Kinshasa,Baghdad,plane,5.77,519.6,flight
+San Diego,Mesa,plane,0.56,50.26,flight
+Nagoya,Shenyang,plane,1.54,138.24,flight
+Jacksonville,Charlotte,plane,0.61,54.96,flight
+Istanbul,Riyadh,plane,2.71,244.27,flight
+Chennai,Ahmedabad,plane,1.52,137.18,flight
+Houston,Dallas,plane,0.4,36.18,flight
+Miami,Bogotá,plane,2.7,242.98,flight
+Guangzhou,Wuhan,plane,0.93,83.63,flight
+Rio de Janeiro,Santiago,plane,3.25,292.71,flight
+Istanbul,London,plane,2.78,250.08,flight
+San Antonio,Mexico City,plane,1.24,111.29,flight
+Austin,Fort Worth,plane,0.31,27.94,flight
+Istanbul,Madrid,plane,3.04,273.92,flight
+Chicago,Detroit,plane,0.42,38.15,flight
+Kinshasa,Luanda,plane,0.59,53.55,flight
+Fresno,Oakland,plane,0.28,24.97,flight
+Kinshasa,Riyadh,plane,5.22,469.45,flight
+Chongqing,Dongguan,plane,1.1,98.62,flight
+Miami,New Orleans,plane,1.2,107.66,flight
+Indianapolis,Milwaukee,plane,0.44,39.18,flight
+Guangzhou,Shenzhen,plane,0.12,10.42,flight
+Seoul,Hangzhou,plane,1.14,102.59,flight
+Washington,Baltimore,plane,0.06,5.62,flight
+Dhaka,Hyderabad,plane,1.59,143.12,flight
+Lahore,Surat,plane,1.29,116.09,flight
+Chongqing,Guangzhou,plane,1.05,94.42,flight
+Mexico City,Bogotá,plane,3.52,317.07,flight
+Shanghai,Osaka,plane,1.51,136.29,flight
+Cairo,Kinshasa,plane,4.66,419.48,flight
+San Antonio,Dallas,plane,0.45,40.63,flight
+Tokyo,Nagoya,plane,0.29,25.86,flight
+San Antonio,Oklahoma City,plane,0.75,67.82,flight
+Dhaka,Chennai,plane,1.78,160.08,flight
+Delhi,Lahore,plane,0.46,40.95,flight
+Delhi,Surat,plane,1.05,94.17,flight
+Chicago,Louisville,plane,0.48,43.34,flight
+Bangkok,Singapore,plane,1.59,142.68,flight
+Jakarta,Ho Chi Minh City,plane,2.1,189.4,flight
+Luanda,Baghdad,plane,6.36,572.4,flight
+Manila,Hong Kong,plane,1.24,111.91,flight
+Xi’an,Hangzhou,plane,1.27,114.61,flight
+Rio de Janeiro,Bogotá,plane,5.05,454.87,flight
+Philadelphia,Baltimore,plane,0.16,14.42,flight
+Cairo,Moscow,plane,3.23,290.3,flight
+Hong Kong,Foshan,plane,0.15,13.29,flight
+San Jose,Long Beach,plane,0.58,51.86,flight
+Cairo,Baghdad,plane,1.44,129.35,flight
+Chicago,Indianapolis,plane,0.29,26.53,flight
+Ho Chi Minh City,Hong Kong,plane,1.68,150.9,flight
+Memphis,Tulsa,plane,0.61,54.84,flight
+Buenos Aires,Santiago,plane,1.27,113.89,flight
+Columbus,Detroit,plane,0.29,26.36,flight
+Los Angeles,Las Vegas,plane,0.41,36.76,flight
+Shanghai,Beijing,plane,1.19,106.73,flight
+Los Angeles,Long Beach,plane,0.04,3.17,flight
+Nashville,Atlanta,plane,0.38,34.58,flight
+Kansas City,Wichita,plane,0.32,28.66,flight
+Charlotte,Miami,plane,1.17,105.43,flight
+Cairo,Tehran,plane,2.2,197.98,flight
+Tokyo,Seoul,plane,1.28,115.26,flight
+Shenzhen,Dongguan,plane,0.07,6.17,flight
+Omaha,Tulsa,plane,0.63,56.74,flight
+Delhi,Karachi,plane,1.21,108.95,flight
+Phoenix,Mesa,plane,0.03,2.28,flight
+São Paulo,Santiago,plane,2.87,258.53,flight
+Columbus,Nashville,plane,0.6,53.66,flight
+Tucson,Mesa,plane,0.17,15.49,flight
+Mumbai,Lahore,plane,1.55,139.17,flight
+Kansas City,Omaha,plane,0.3,26.6,flight
+Mumbai,Hyderabad,plane,0.69,62.15,flight
+Charlotte,Atlanta,plane,0.4,36.41,flight
+Mumbai,Surat,plane,0.26,23.29,flight
+Osaka,Shenyang,plane,1.46,131.56,flight
+San Jose,Seattle,plane,1.27,114.23,flight
+Cairo,Luanda,plane,5.26,473.02,flight
+El Paso,Colorado Springs,plane,0.89,80.07,flight
+Dallas,New Orleans,plane,0.79,71.15,flight
+Istanbul,Lagos,plane,5.11,459.79,flight
+Bogotá,Santiago,plane,4.73,425.83,flight
+Jacksonville,Bogotá,plane,3.29,295.79,flight
+Phoenix,Tucson,plane,0.19,17.07,flight
+Bangkok,Ho Chi Minh City,plane,0.82,74.13,flight
+Columbus,Louisville,plane,0.34,30.46,flight
+Nashville,Louisville,plane,0.28,24.94,flight
+Charlotte,Nashville,plane,0.61,54.62,flight
+Mumbai,Chennai,plane,1.15,103.31,flight
+Jakarta,Kuala Lumpur,plane,1.32,118.68,flight
+Los Angeles,Oakland,plane,0.61,55.27,flight
+Manila,Foshan,plane,1.39,124.91,flight
+San Jose,San Francisco,plane,0.08,6.76,flight
+Fort Worth,Tulsa,plane,0.44,39.73,flight
+Atlanta,New Orleans,plane,0.76,68.28,flight
+Cairo,Istanbul,plane,1.37,123.6,flight
+Omaha,Minneapolis,plane,0.52,46.7,flight
+London,Baghdad,plane,4.54,409.01,flight
+Wuhan,Hangzhou,plane,0.62,56.19,flight
+Buenos Aires,Bogotá,plane,5.19,467.05,flight
+Phoenix,Las Vegas,plane,0.46,41.22,flight
+Ho Chi Minh City,Foshan,plane,1.69,152.13,flight
+Los Angeles,San Francisco,plane,0.62,55.91,flight
+Columbus,Indianapolis,plane,0.3,27.05,flight
+Mumbai,Karachi,plane,0.98,88.34,flight
+Manila,Shenzhen,plane,1.27,114.54,flight
+Manila,Kuala Lumpur,plane,2.74,247.02,flight
+Tulsa,Wichita,plane,0.23,20.78,flight
+Atlanta,Miami,plane,1.08,97.59,flight
+Moscow,London,plane,2.78,250.05,flight
+Moscow,Madrid,plane,3.82,344.03,flight
+Karachi,Riyadh,plane,2.28,205.01,flight
+Las Vegas,Fresno,plane,0.47,42.04,flight
+Dallas,Wichita,plane,0.61,54.82,flight
+Jacksonville,Miami,plane,0.59,52.81,flight
+Lagos,Kinshasa,plane,2.0,179.67,flight
+San Francisco,Seattle,plane,1.21,109.32,flight
+Detroit,Milwaukee,plane,0.45,40.5,flight
+Albuquerque,Colorado Springs,plane,0.5,44.74,flight
+Memphis,Kansas City,plane,0.66,59.5,flight
+São Paulo,Bogotá,plane,4.81,432.78,flight
+Phoenix,Albuquerque,plane,0.59,53.05,flight
+Los Angeles,San Diego,plane,0.2,17.94,flight
+Lima,Santiago,plane,2.74,246.64,flight
+Manila,Jakarta,plane,3.1,279.0,flight
+Guangzhou,Foshan,plane,0.02,1.89,flight
+Osaka,Nagoya,plane,0.15,13.9,flight
+Tokyo,Osaka,plane,0.44,39.64,flight
+Fort Worth,Mexico City,plane,1.66,149.22,flight
+Dallas,Fort Worth,plane,0.06,5.0,flight
+Las Vegas,Mesa,plane,0.48,43.02,flight
+New York,Baltimore,plane,0.3,27.26,flight
+Jacksonville,Atlanta,plane,0.51,45.89,flight
+Wuhan,Dongguan,plane,0.94,84.38,flight
+Riyadh,Baghdad,plane,1.09,98.24,flight
+Houston,New Orleans,plane,0.57,51.13,flight
+San Diego,Las Vegas,plane,0.47,42.64,flight
+Beijing,Seoul,plane,1.06,95.23,flight
+San Diego,Long Beach,plane,0.17,15.15,flight
+Dallas,Austin,plane,0.33,29.31,flight
+Hyderabad,Surat,plane,0.81,72.75,flight
+Las Vegas,Tucson,plane,0.65,58.24,flight
+Jacksonville,Nashville,plane,0.89,80.44,flight
+El Paso,Mesa,plane,0.59,53.35,flight
+Raleigh,Miami,plane,1.25,112.37,flight
+Buenos Aires,Rio de Janeiro,plane,2.19,196.78,flight
+Portland,Oakland,plane,0.95,85.69,flight
+Boston,Baltimore,plane,0.64,57.85,flight
+Shanghai,Shenyang,plane,1.32,118.88,flight
+Guangzhou,Hangzhou,plane,1.16,104.81,flight
+Fort Worth,Oklahoma City,plane,0.34,30.21,flight
+Oklahoma City,Kansas City,plane,0.53,48.02,flight
+Denver,Albuquerque,plane,0.6,53.79,flight
+Karachi,Lahore,plane,1.15,103.3,flight
+Bangalore,Hyderabad,plane,0.56,50.0,flight
+Dongguan,Foshan,plane,0.07,6.45,flight
+Bangalore,Surat,plane,1.16,104.25,flight
+Fresno,Sacramento,plane,0.28,25.42,flight
+Phoenix,San Diego,plane,0.53,48.09,flight
+São Paulo,Rio de Janeiro,plane,0.4,36.07,flight
+Indianapolis,Detroit,plane,0.43,38.64,flight
+Sacramento,Oakland,plane,0.12,10.99,flight
+Shanghai,Xi’an,plane,1.36,122.07,flight
+Dallas,Fort Worth,plane,0.06,5.0,flight
+Dallas,San Antonio,plane,0.27,24.4,flight
+Dallas,El Paso,plane,0.59,53.25,flight
+Dallas,New Orleans,plane,0.79,71.15,flight
+Dallas,Fort Worth,plane,0.06,5.0,flight

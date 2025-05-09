@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Create Trip – Travel Planner{% endblock %}
+
+{% block content %}
+  <h2>Create a New Trip</h2>
+  {% if error %}
+    <p class="error">{{ error }}</p>
+  {% endif %}
+  <form class="form" method="post" action="{{ url_for('create_trip') }}">
+    <div>
+      <label for="name">Trip Name:</label><br>
+      <input id="name" type="text" name="name" required placeholder="My Europe Adventure">
+    </div>
+    <div>
+      <label for="start_date">Start Date:</label><br>
+      <input id="start_date" type="date" name="start_date" required>
+    </div>
+    <div>
+      <label for="end_date">End Date:</label><br>
+      <input id="end_date" type="date" name="end_date" required>
+    </div>
+    <div>
+      <label>Preference:</label><br>
+      <label><input type="radio" name="preference" value="time" checked> Fastest</label>
+      <label><input type="radio" name="preference" value="cost"> Cheapest</label>
+    </div>
+    <button type="submit">➔ Next: Add Locations</button>
+  </form>
+{% endblock %}

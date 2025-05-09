@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Route – Travel Planner{% endblock %}
+
+{% block content %}
+  <h2>Optimal Route for “{{ trip_name }}”</h2>
+  {% if start_date and end_date %}
+    <p><strong>Dates:</strong> {{ start_date }} to {{ end_date }}</p>
+  {% endif %}
+  {% if preference %}
+    <p><strong>Preference:</strong>
+      {{ 'Fastest' if preference == 'time' else 'Cheapest' }}
+    </p>
+  {% endif %}
+
+  {% if error %}
+    <p class="error">{{ error }}</p>
+  {% else %}
+    <div id="map"></div>
+    <div id="route-info">
+      <p><strong>Total Distance:</strong> <span id="total-distance">…</span></p>
+      <p><strong>Estimated Time:</strong> <span id="total-time">…</span></p>
+    </div>
+  {% endif %}
+{% endblock %}
+
+{% block scripts %}
+  <script
+    async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRJImjPQxMs9XoIKHJQojMXIzLws0hbOg&callback=initMap">
+  </script>
+  <script src="{{ url_for('static', filename='js/maps.js') }}"></script>
+{% endblock %}
