@@ -74,8 +74,9 @@ async function fetchAndDisplayRoute(tripName) {
   document.getElementById('total-cost').textContent =
     "$" + cost.toFixed(2);
   // Display execution time
+  const execTime = data.exec_time_ms;
   document.getElementById('exec-time').textContent =
-    data.exec_time_ms + ' ms';
+    execTime.toFixed(4) + ' ms';
 }
 
 // Haversine formula (km)

@@ -171,7 +171,7 @@ def route_api(trip_name):
         for a, b in zip(ordered, ordered[1:])
     )
 
-    exec_time_ms = int((time.perf_counter() - start) * 1000)
+    exec_time_ms = (time.perf_counter() - start) * 1000.0
 
     return jsonify({
         'origin':      coords[0],
