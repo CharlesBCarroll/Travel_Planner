@@ -3,6 +3,7 @@ import json
 from flask import Flask, render_template, request, redirect, url_for, jsonify, abort
 from graph import Graph
 from math import isinf
+import time
 
 app = Flask(__name__)
 
@@ -111,31 +112,43 @@ def route_page(trip_name):
 
 @app.route('/api/route/<trip_name>')
 def route_api(trip_name):
+    start = time.perf_counter()
     if trip_name not in trips:
         abort(404)
 
     city_list = trips[trip_name]['locations']
     if len(city_list) < 2:
-        return jsonify({ 'origin': None, 'waypoints': [], 'destination': None, 'total_time': 0 })
+        return jsonify({
+            'origin': None,
+            'waypoints': [],
+            'destination': None,
+            'total_time': 0,
+            'total_cost': 0
+        })
 
-    # Use TSP (with Dijkstra) according to the user’s preference
-    weight = 'cost' if trips[trip_name]['preference'] == 'cost' else 'time'
+    # Choose weighting based on user preference
+    pref = trips[trip_name]['preference']
+    if pref == 'cost':
+        weight = 'cost'
+    elif pref == 'distance':
+        weight = 'distance'
+    else:
+        weight = 'time'
 
-
+    # Compute TSP ordering, catch if no full tour is possible
     try:
         ordered = global_graph.tsp_path(city_list, weight=weight)
     except ValueError as e:
-        # If no complete tour exists, return the error message
         return jsonify({'error': str(e)})
 
-    # Check connectivity
+    # Verify connectivity between each consecutive pair
     for a, b in zip(ordered, ordered[1:]):
         if isinf(global_graph.shortest_distance(a, b, weight)):
             return jsonify({
                 'error': f"No route found between {a} and {b}. Please remove or replace one of these cities."
             })
 
-    # Build coords list
+    # Build list of coordinate objects
     coords = [
         {
             'lat': global_graph.locations[name].lat,
@@ -145,20 +158,31 @@ def route_api(trip_name):
     ]
 
     # Sum up flight time (in hours) for each leg
-    total_time_hours = 0.0
-    for a, b in zip(ordered, ordered[1:]):
-        leg_time = global_graph.shortest_distance(a, b, weight='time')
-        total_time_hours += leg_time
-
-    # Convert hours to seconds for the client
+    total_time_hours = sum(
+        global_graph.shortest_distance(a, b, weight='time')
+        for a, b in zip(ordered, ordered[1:])
+    )
+    # Convert to seconds
     total_time_seconds = int(total_time_hours * 3600)
+
+    # Sum up cost for each leg
+    total_cost = sum(
+        global_graph.shortest_distance(a, b, weight='cost')
+        for a, b in zip(ordered, ordered[1:])
+    )
+
+    exec_time_ms = int((time.perf_counter() - start) * 1000)
 
     return jsonify({
         'origin':      coords[0],
         'waypoints':   coords[1:-1],
         'destination': coords[-1],
-        'total_time':  total_time_seconds
+        'total_time':  total_time_seconds,
+        'total_cost':  total_cost,
+        'ordered':      ordered,
+        'exec_time_ms': exec_time_ms
     })
+
 
 def delete_trip(trip_name):
     if trip_name in trips:

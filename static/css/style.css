@@ -126,3 +126,6 @@ body {
 a.button:hover {
   background-color: #0056b3 !important;
 }
+.button.delete-button:hover{
+  background-color: #bd2130 !important
+}

@@ -16,10 +16,14 @@
   {% if error %}
     <p class="error">{{ error }}</p>
   {% else %}
+  <p id="route-list"><strong>Route:</strong> …</p>
     <div id="map"></div>
     <div id="route-info">
       <p><strong>Total Distance:</strong> <span id="total-distance">…</span></p>
-      <p><strong>Estimated Time:</strong> <span id="total-time">…</span></p>
+      <p><strong>Estimated Flight-Cruise Time:</strong> <span id="total-time">…</span></p>
+      <p><strong>Estimated Cost:</strong> <span id="total-cost">…</span></p>
+      <p><strong>Execution Time:</strong> <span id="exec-time">…</span> ms</p>
+  </div>
     </div>
   {% endif %}
 {% endblock %}

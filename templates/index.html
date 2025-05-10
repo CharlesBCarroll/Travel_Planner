@@ -24,7 +24,7 @@
           <div style="display: flex; gap: 0.5rem;">
             <a href="{{ url_for('add_locations', trip_name=name) }}" class="button" style="background-color: #007BFF; color: white; text-decoration: none;" onmouseover="this.style.backgroundColor='#0056b3';" onmouseout="this.style.backgroundColor='#007BFF';">Add</a>
             <form method="post" action="{{ url_for('handle_delete_trip', trip_name=name) }}" style="display: flex; gap: 0.5rem;">
-              <button type="submit" class="button" style="background-color: #dc3545; color: white; text-decoration: none;" onmouseover="this.style.backgroundColor='#c82333';" onmouseout="this.style.backgroundColor='#dc3545';">🗑️ Delete</button>
+              <button type="submit" class="button delete-button" style="background-color: #dc3545; color: white; text-decoration: none;" onmouseover="this.style.backgroundColor= '#c82333';">🗑️ Delete</button>
             </form>
           </div>
         </li>

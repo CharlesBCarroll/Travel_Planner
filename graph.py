@@ -54,7 +54,21 @@ class Graph:
                     heapq.heappush(pq, (nd, v))
         return dist, prev
 
+    @staticmethod
+    def haversine(lat1, lon1, lat2, lon2):
+        to_rad = math.radians
+        dlat = to_rad(lat2 - lat1)
+        dlon = to_rad(lon2 - lon1)
+        a = (math.sin(dlat/2)**2 +
+             math.cos(to_rad(lat1)) * math.cos(to_rad(lat2)) *
+             math.sin(dlon/2)**2)
+        return 6371 * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+    
     def shortest_distance(self, orig, dest, weight='time'):
+        if weight == 'distance':
+            o = self.locations[orig]
+            d = self.locations[dest]
+            return Graph.haversine(o.lat, o.lon, d.lat, d.lon)
         dist, _ = self.dijkstra(orig, weight)
         return dist.get(dest, math.inf)
 
@@ -64,12 +78,20 @@ class Graph:
             return cities[:]
         # build n x n distance matrix
         mat = [[0]*n for _ in range(n)]
-        for i, ci in enumerate(cities):
-            dist, _ = self.dijkstra(ci, weight)
-            for j, cj in enumerate(cities):
-                mat[i][j] = dist.get(cj, math.inf)
-        if n <= 2:
-            return cities
+
+        if weight == 'distance':
+            # direct haversine distances
+            for i, ci in enumerate(cities):
+                o = self.locations[ci]
+                for j, cj in enumerate(cities):
+                    d = self.locations[cj]
+                    mat[i][j] = Graph.haversine(o.lat, o.lon, d.lat, d.lon)
+        else:
+            # precompute shortest paths by Dijkstra for time or cost
+            for i, ci in enumerate(cities):
+                dist, _ = self.dijkstra(ci, weight)
+                for j, cj in enumerate(cities):
+                    mat[i][j] = dist.get(cj, math.inf)
         m = n - 2
         dp = {}
         parent = {}
