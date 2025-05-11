@@ -17,6 +17,9 @@ Washington,Raleigh,plane,0.42,37.55,flight
 Chennai,Hyderabad,plane,0.57,51.52,flight
 Chongqing,Xi’an,plane,0.64,57.85,flight
 Chicago,Minneapolis,plane,0.63,57.06,flight
+Chicago,Dallas,plane,4.0,200.0,flight
+Chicago,Denver,plane,3.0,300.0,flight
+Chicago,Miami,plane,5.0,100.0,flight
 Houston,Austin,plane,0.26,23.54,flight
 Chennai,Surat,plane,1.33,119.68,flight
 Luanda,Riyadh,plane,5.78,519.77,flight
@@ -42,7 +45,7 @@ Shenzhen,Hong Kong,plane,0.03,2.74,flight
 San Antonio,Fort Worth,plane,0.43,38.66,flight
 Cairo,Madrid,plane,3.72,335.06,flight
 Dhaka,Chongqing,plane,1.95,175.31,flight
-Washington,Boston,plane,0.7,63.37,flight
+Washington,Boston,plane,0.7,1.00,flight
 Delhi,Dhaka,plane,1.59,143.33,flight
 Istanbul,Moscow,plane,1.95,175.64,flight
 Washington,Virginia Beach,plane,0.27,24.66,flight

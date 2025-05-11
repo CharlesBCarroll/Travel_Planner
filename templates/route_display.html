@@ -9,7 +9,9 @@
   {% endif %}
   {% if preference %}
     <p><strong>Preference:</strong>
-      {{ 'Fastest' if preference == 'time' else 'Cheapest' }}
+  {{ 'Fastest' if preference == 'time'
+     else ('Cheapest' if preference == 'cost'
+           else 'Shortest') }}
     </p>
   {% endif %}
 
