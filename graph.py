@@ -15,7 +15,6 @@ class Graph:
         self.adj = {}            # name -> list of (neighbor, time, cost)
         self.load_cities(cities_file)
         self.load_routes(routes_file)
-        print("Chicago neighbors:", [ (nbr, t, c) for nbr, t, c in self.adj['Chicago'] ])
 
     def load_cities(self, filename):
         with open(filename, newline='') as f:
