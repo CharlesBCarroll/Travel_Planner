@@ -10,7 +10,6 @@ app = Flask(__name__)
 # File for persisting trips
 TRIPS_FILE = 'data/trips.json'
 
-# Helper functions for persistence
 
 def load_trips():
     if os.path.exists(TRIPS_FILE):
@@ -42,7 +41,6 @@ def create_trip():
         start_date = request.form['start_date']
         end_date = request.form['end_date']
         preference = request.form.get('preference', 'time')
-        # Prevent duplicate trip names
         if name in trips:
             error = f"Trip '{name}' already exists. Choose a different name."
         else:
@@ -157,7 +155,7 @@ def route_api(trip_name):
         for name in ordered
     ]
 
-    # Sum up flight time (in hours) for each leg
+    # Sum up flight time for each leg
     total_time_hours = sum(
         global_graph.shortest_distance(a, b, weight='time')
         for a, b in zip(ordered, ordered[1:])

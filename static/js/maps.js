@@ -1,13 +1,12 @@
 let map;
 
-// Called by Google Maps API once it loads
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: 0, lng: 0 },
     zoom: 2
   });
 
-  // After map is ready, fetch & draw
+  // fetch & draw
   const tripName = window.location.pathname.split('/').pop();
   fetchAndDisplayRoute(tripName);
 }
@@ -62,7 +61,7 @@ async function fetchAndDisplayRoute(tripName) {
   document.getElementById('total-distance').textContent =
     totalKm.toFixed(1) + ' km';
 
-  // Display estimated time from the API
+  // Display estimated time
   const secs = data.total_time;
   const hours = Math.floor(secs / 3600);
   const mins = Math.floor((secs % 3600) / 60);
@@ -79,7 +78,7 @@ async function fetchAndDisplayRoute(tripName) {
     execTime.toFixed(4) + ' ms';
 }
 
-// Haversine formula (km)
+// Haversine formula
 function haversine(a, b) {
   const toRad = x => x * Math.PI / 180;
   const R = 6371;

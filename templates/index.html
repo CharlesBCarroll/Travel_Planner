@@ -13,10 +13,10 @@
         {% endif %}
         <li class="trip-item" style="display: flex; justify-content: space-between; align-items: center;">
           <a href="{{ url_for('route_page', trip_name=name) }}" class="trip-info" style="text-decoration: none; color: #007BFF; font-weight: bold;">
-            {{ name }} 
+            {{ name }}
             {% if date_range %}
               <span style="font-size: 0.9rem; color: #555;">({{ date_range }})</span>
-            {% endif %} 
+            {% endif %}
             {% if trip.locations %}
               <span style="font-size: 0.9rem; color: #555;"> - {{ trip.locations | length }} locations</span>
             {% endif %}

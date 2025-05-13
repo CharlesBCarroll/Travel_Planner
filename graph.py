@@ -11,8 +11,8 @@ class Location:
 
 class Graph:
     def __init__(self, cities_file, routes_file):
-        self.locations = {}      # name -> Location
-        self.adj = {}            # name -> list of (neighbor, time, cost)
+        self.locations = {}
+        self.adj = {}
         self.load_cities(cities_file)
         self.load_routes(routes_file)
 
@@ -95,7 +95,7 @@ class Graph:
         m = n - 2
         dp = {}
         parent = {}
-        # DP over subsets of intermediate cities (indices 1..n-2)
+        # DP over subsets of intermediate cities
         for mask in range(1<<m):
             for j in range(1, n-1):
                 bit = 1<<(j-1)
